@@ -3,6 +3,10 @@ language: c
 
 #sudo: false # only for faster builds
 
+branches:
+  only: 
+  - test/branch
+  
 install:
 - cd ${TRAVIS_BUILD_DIR}
 # install latest LCOV (1.9 was failing for me) [1]
